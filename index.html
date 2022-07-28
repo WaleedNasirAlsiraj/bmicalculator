@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-CALCULATOR-APP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <section class="upper">
+                <div class="time">
+                    <p><b id="time">19:20</b></p>
+                </div>
+                <div class="icons">
+                    <ul>
+                        <li><img class="top-icons" src="/icons8-signal-100.png"></li>
+                        <li><img class="top-icons" src="/icons8-wi-fi-100.png"></li>
+                        <li><img class="top-icons" src="/icons8-full-battery-100.png"></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="lower">
+                <nav>
+                    <div class="side">
+                        <img src="/icons8-menu-100(1).png">
+                    </div>
+                    <div class="heading">
+                        <h3>BMI CALCULATOR</h3>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <section class="content">
+            <div class="boxes">
+                <label for="male">
+                    <div class="box1 box">
+                        <img class="gender-pic" src="/icons8-male-100(1).png">
+                        <h3 class="gender">MALE</h3>
+                    </div>
+                </label>
+                <input type="radio" class="gender-btn" name="male" id="male" checked>
+                <label for="female">
+                    <div class="box2 box">
+                        <img class="gender-pic" src="/icons8-female-100(1).png">
+                        <h3 class="gender">FEMALE</h3>
+                    </div>
+                </label>
+                <input type="radio" class="gender-btn" name="male" id="female" checked>
+            </div>
+        </section>
+        <section class="content second">
+            <div class="height-box">
+                <h3 class="height">HEIGHT</h3>
+                <div class="value">
+                    <h3 id="range-value" class="range-value" >0</h3><span class="cm">cm</span>
+                </div>
+
+                <input type="range" name="" value="0" max="250" min="0" onChange="rangeSlide(this.value)" onMousemove="rangeSlide(this.value)">
+            </div>
+        </section>
+        <section  class="content">
+            <div class="boxes ">
+                <div class="box1 box opa">
+                    <h3>WEIGHT</h3>
+                    <div class="value">
+                        <h3 id="range-value-weight" class="range-value" >0</h3><span class="kg">kg</span>
+                    </div>
+                    <input id="small" type="range" name="" value="0" max="200" min="0" onChange="rangeSlideWeight(this.value)" onMousemove="rangeSlideWeight(this.value)">
+                </div>
+                <div class="box2 box opa">
+                    <h3>AGE</h3>
+                    <div class="value">
+                        <h3 id="range-value-age" class="range-value" >0</h3><span class="kg">Years</span>
+                    </div>
+                    <input id="small" type="range" name="" value="0" max="100" min="0" onChange="rangeSlideAge(this.value)" onMousemove="rangeSlideAge(this.value)">
+                </div>
+            </div>
+        </section>
+        <section>
+            <footer>
+                <h1>Calculate Your Bmi</h1>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>
